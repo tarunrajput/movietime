@@ -1,0 +1,11 @@
+node_modules/
+.yarn/
+.expo/
+android/
+ios/
+assets/
+yarn.lock
+package-lock.json
+*.md
+*.yml
+*.yaml

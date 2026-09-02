@@ -1,5 +1,5 @@
-const presets = ['module:metro-react-native-babel-preset']
-const plugins = []
+const presets = ['babel-preset-expo'];
+const plugins = [];
 
 plugins.push([
   'module-resolver',
@@ -10,9 +10,12 @@ plugins.push([
       '@': './src',
     },
   },
-])
+]);
+
+// NOTE: The Reanimated/Worklets Babel plugin is added automatically by
+// babel-preset-expo since react-native-worklets is installed (SDK 57).
 
 module.exports = {
   presets,
   plugins,
-}
+};

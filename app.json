@@ -1,4 +1,48 @@
 {
-  "name": "movietime",
-  "displayName": "MovieTime"
+  "expo": {
+    "name": "MovieTime",
+    "slug": "movietime",
+    "scheme": "movietime",
+    "version": "0.0.1",
+    "orientation": "portrait",
+    "icon": "./src/assets/icons/ic_launcher.png",
+    "userInterfaceStyle": "automatic",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.movietime"
+    },
+    "android": {
+      "package": "com.movietime",
+      "adaptiveIcon": {
+        "foregroundImage": "./src/assets/icons/ic_launcher.png",
+        "backgroundColor": "#0B0D2E"
+      }
+    },
+    "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./src/assets/Fonts/Montserrat-Regular.ttf",
+            "./src/assets/Fonts/Montserrat-SemiBold.ttf",
+            "./src/assets/Fonts/Montserrat-Bold.ttf",
+            "./src/assets/Fonts/Montserrat-Light.ttf",
+            "./src/assets/Fonts/Montserrat-Medium.ttf"
+          ]
+        }
+      ],
+      "expo-localization",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#0B0D2E",
+          "resizeMode": "cover"
+        }
+      ],
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
 }
